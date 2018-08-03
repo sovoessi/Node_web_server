@@ -22,10 +22,10 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-    // no next() here
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+//     // no next() here
+// });
 
 app.use(express.static(__dirname +'/public'));
 
